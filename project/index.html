@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link - Сокращатель ссылок</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="blob"></div>
+    <div class="blob2"></div>
+
+    <header class="header glass">
+        <div class="container flex-header">
+            <div class="logo"><span>Link</span></div>
+            <div class="dropdown">
+                <button class="btn btn-blur" id="dropBtn">Аккаунт ▼</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" id="openLoginBtn">Вход</a>
+                    <a href="#" id="openRegBtn">Регистрация</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-layout">
+            <aside class="sidebar glass card">
+                <div class="acc-item">
+                    <div class="acc-header">Интересное</div>
+                    <div class="acc-body">
+                        Аналитика<br>Короткими ссылками чаще всего пользуются компании и небольшие предприятия поскольку так удобно и понятно для большого круга людей
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <div class="acc-header">Вечная жизнь</div>
+                    <div class="acc-body">
+                        Наши ссылки не имеют срока годности. Один раз сократили - и она будет работать, пока жив интернет
+                    </div>
+                </div>
+                <div class="acc-item">
+                    <div class="acc-header">Безопасность</div>
+                    <div class="acc-body">
+                        Все ссылки проверяются на фишинг!
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <section class="main-hero">
+                    <h2>Сокращай с умом</h2>
+                    <p>Преврати громоздкие ссылки в аккуратные линки за секунду</p>
+                    
+                    <div class="form-group-row">
+                        <picture>
+                            <source srcset="assets/images/logo.webp" type="image/webp">
+                            <img src="assets/images/logo.png" alt="Логотип Link" class="logo-icon" width="48" height="48" loading="eager">
+                        </picture>
+                        <input type="text" placeholder="Вставьте вашу ссылку здесь...">
+                        <button class="btn btn-grad">Сократить</button>
+                    </div>
+                </section>
+
+                <div class="grid-gallery">
+                    <div class="card glass">
+                            <picture>
+                                <source srcset="assets/images/stats.webp" type="image/webp">
+                                <img src="assets/images/stats.png" alt="Статистика" class="feature-icon" loading="lazy" width="64" height="64">
+                            </picture>
+                            <h3>Статистика</h3>
+                            <p>Полный отчет по странам и устройствам.</p>
+                        </div>
+                    <div class="card glass">
+                        <picture>
+                            <source srcset="assets/images/shield.webp" type="image/webp">
+                            <img src="assets/images/shield.png" alt="Защита" class="feature-icon" loading="lazy" width="64" height="64">
+                        </picture>
+                        <h3>Защита</h3>
+                        <p>SSL-шифрование данных.</p>
+                    </div>
+                    
+                    <div class="card glass feature-card-bg">
+                        <div class="card-content">
+                            <h3>Скорость</h3>
+                            <p>Мгновенный редирект без задержек.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card glass">
+                        <picture>
+                            <source srcset="assets/images/qr.webp" type="image/webp">
+                            <img src="assets/images/qr.png" alt="QR-коды" class="feature-icon" loading="lazy" width="64" height="64">
+                        </picture>
+                        <h3>QR-коды</h3>
+                        <p>Генерация кодов в одно нажатие.</p>
+                    </div>
+                    <!-- SVG-карточка: Буст-ускорение -->
+                <div class="card glass catalog-card">
+                    <img src="assets/images/boost.svg" alt="Ускорение ссылок" class="catalog-icon" style="width: 64px; height: 64px;" loading="lazy">
+                    <h3>Мгновенный буст</h3>
+                    <p>Наши сервера разгоняют переход по ссылке до сверхзвуковой скорости.</p>
+                </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo"><span>Link</span></div>
+                <p>Делаем интернет лаконичнее и удобнее для каждого пользователя.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <p><a href="#" id="footerStats">Моя статистика</a></p>
+                <p><a href="catalog.html">Каталог ссылок</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div>
+                <h4>Связаться</h4>
+                <p>Почта: support247@mail.ru</p>
+                <p>Адрес: г. Москва, РФ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛКА СТАТИСТИКИ (старая, нетронутая) -->
+    <div id="statsModal" class="modal-overlay hidden">
+        <div class="modal-card glass">
+            <h2>Моя статистика</h2>
+            
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-label">КЛИКИ</div>
+                    <div class="stat-value">1,254</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">ССЫЛКИ</div>
+                    <div class="stat-value">12</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">РЕГИОН</div>
+                    <div class="stat-value">RU</div>
+                </div>
+            </div>
+            
+            <div class="stats-table-section">
+                <p class="table-title">Последние переходы:</p>
+                <table class="stats-table">
+                    <thead>
+                        <tr><th>Ссылка</th><th>Клики</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="#">sh.li/x7K2</a></td><td>452</td></tr>
+                        <tr><td><a href="#">sh.li/9bL1</a></td><td>128</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <button class="btn btn-grad full-w close-stats">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА ВХОДА/РЕГИСТРАЦИИ (новая, отдельная) -->
+    <div id="authModal" class="modal-overlay hidden">
+        <div id="loginModal" class="modal-card glass">
+            <h2>Вход в аккаунт</h2>
+            <form class="v-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit" class="btn btn-grad full-w">Войти</button>
+            </form>
+            <p style="margin-top: 15px; color: var(--text-dim);">Нет аккаунта? <a href="#" id="switchToRegBtn" style="color: var(--primary);">Зарегистрируйтесь</a></p>
+            <button class="btn btn-blur full-w close-auth" style="margin-top: 10px;">Закрыть</button>
+        </div>
+
+        <div id="regModal" class="modal-card glass hidden">
+            <h2>Регистрация</h2>
+            <form class="v-form">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <label class="checkbox-group">
+                    <input type="checkbox" required>
+                    <span>Я согласен с условиями</span>
+                </label>
+                <button type="submit" class="btn btn-grad full-w">Создать аккаунт</button>
+            </form>
+            <p style="margin-top: 15px; color: var(--text-dim);">Уже есть аккаунт? <a href="#" id="switchToLoginBtn" style="color: var(--primary);">Войдите</a></p>
+            <button class="btn btn-blur full-w close-auth" style="margin-top: 10px;">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
